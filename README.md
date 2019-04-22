@@ -17,7 +17,7 @@ const sentence = 'I love dogs'
 const regex = /dog|cat/
 ```
 
-## Case insensitive: 'i' flag
+## Case insensitive: `i` flag
 
 ```js
 const sentence = 'I love Dogs'
@@ -50,13 +50,13 @@ humStr.match(regex) // returns ['hum']
 hugStr.match(regex) // returns ['hug']
 ```
 
-## Match single character with multiple possibilities
+## Match single character with multiple possibilities: `[]`
 
 ```js
 const regex = /b[aiu]g/ // matches bag, big, bug
 ```
 
-## Match range of letters/numbers of the alphabet
+## Match range of letters or numbers of the alphabet
 
 ```js
 const regex = /[a-z0-9]/ig // matches letters a~z and numbers 0~9
@@ -87,7 +87,7 @@ gut.match(regex) // returns ['g']
 non.match(regex) // returns null
 ```
 
-## Find characters with lazy matching
+## :bulb: Find characters with lazy matching
 
 Greedy match(default): Find the **longest** possible part of the string that fits the regex pattern
 Lazy match: Find the **shortest** possible part of the string that fits the regex pattern
